@@ -1,0 +1,250 @@
+  
+/* ---------- 全局 ---------- */
+body {
+    margin: 0;
+    font-family: "Georgia", serif;       /* ⭐ 全站字体 */
+    background: #f7f3ef;                 /* ⭐ 淡米色背景 */
+    
+    text-align: center;
+}
+
+/* ---------- 导航 ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;                 /* 水平垂直居中 */
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar h2 {
+    color: Sienna;
+    font-size: 35px;
+    font-family: "Georgia", serif;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.menu a {
+    margin: 0 10px;
+    color: #555;
+    font-weight: 800;
+    font-size: 18px;                    /* ⭐ 调整字体大小 */
+    transition: all 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.menu a:hover {
+    color: #FF6347;
+}
+
+.menu a:active {
+    color: #ff6600;
+}
+
+/* 当前页面高亮 */
+.menu a.active {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+}
+
+/* ---------- Banner ---------- */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.4);
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Georgia", serif;
+}
+
+/* ---------- 卡片 ---------- */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px;
+}
+
+.card {
+    background: white;
+    color: Dodgerblue;
+    border-radius: 12px;
+    width: 260px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    font-family: "Georgia", serif;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px 15px;
+    color: #666;
+}
+
+/* ---------- 内容页 ---------- */
+.section {
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.main-img {
+    width: 80%;
+    border-radius: 12px;
+    margin: 20px auto;
+}
+
+h1 {
+    margin-top: 30px;
+    font-family: "Georgia", serif;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: "Georgia", serif;
+    color: #5a3e2b;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    font-family: "Georgia", serif;
+}
+
+/* ---------- Food 页面风格 ---------- */
+.food-page {
+    color: #333;
+}
+
+.food-page h1 {
+    font-size: 36px;
+    color: #d35400;   /* 橙色（食欲感） */
+}
+
+.food-page h2 {
+    color: #e67e22;
+}
+
+.food-page p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ---------- Culture 页面风格 ---------- */
+body.culture-page {
+    background: #f7f3ef;  
+    color: #2c2c2c;
+    font-family: "Georgia", serif;
+}
+
+body.culture-page h1 {
+    font-size: 38px;
+    color: #5a3e2b;  
+}
+
+body.culture-page h2 {
+    color: #7a5230;
+    margin-top: 20px;
+}
+
+body.culture-page p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+
+body.culture-page .main-img {
+    width: 80%;
+    border-radius: 12px;
+    margin: 20px auto;
+}
+
+body.culture-page .back {
+    background: #5a3e2b;
+    color: white;
+}
+
+body.culture-page .back:hover {
+    background: #7a5230;
+}
+
+/* ---------- 返回按钮统一 ---------- */
+.back {
+    display: inline-block;
+    margin: 30px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+    background: #5a3e2b;
+    color: white;
+}
+
+.back:hover {
+    background: #7a5230;
+}
+
+/* ---------- 页脚 ---------- */
+footer {
+    background: #222;
+    color: ghostwhite;
+    padding: 20px;
+    margin-top: 40px;
+}
+.banner-text p {
+    color: white !important;
+}
+footer p,
+footer a {
+    color: white !important;
+}
+.welcome-box p {
+    color: white !important;
+}
+.enter-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.welcome-box {
+    position: relative;
+    z-index: 2;
+}
